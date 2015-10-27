@@ -13,3 +13,64 @@
 </head>
 
 <body>
+  <div class ="firstcontainer" >
+  <br><br>
+  <table  id="Table1" width= auto>
+   <tr>
+      <td style = 'text-align:right'>Client :</td>
+      <td><SELECT style =  "color:#000000;width:160px" id = "clientpretty" name="clientpretty"><OPTION selected="selected" VALUE="n/a">n/a</OPTION></SELECT></td>
+      <td style = 'text-align:right;padding-left:1cm'>Crop :</td>
+      <td><SELECT style =  "color:#000000;width:70px" id = "crop" name="crop">
+        <OPTION selected="selected" VALUE="c">c</OPTION>
+        <OPTION VALUE="s">s</OPTION>
+        <OPTION VALUE="w">w</OPTION>
+        <OPTION VALUE="kw">kw</OPTION>
+        <OPTION VALUE="ct">ct</OPTION>
+        <OPTION VALUE="m">m</OPTION>
+        <OPTION VALUE="sm">sm</OPTION>
+        <OPTION VALUE="bo">bo</OPTION>
+        <OPTION VALUE="lc">lc</OPTION>
+        <OPTION VALUE="fc">fc</OPTION>
+        <OPTION VALUE="lh">lh</OPTION>
+        <OPTION VALUE="ng">ng</OPTION></SELECT></td>
+      <td style = 'text-align:right;padding-left:1cm'>Crop Year :</td>
+      <td><SELECT style =  "color:#000000;width:70px" id = "cropyear" name="cropyear">
+        <OPTION VALUE="cy14">cy14</OPTION>
+        <OPTION selected="selected" VALUE="cy15">cy15</OPTION>
+        <OPTION VALUE="cy16">cy16</OPTION>
+        <OPTION VALUE="cy17">cy17</OPTION>
+        <OPTION VALUE="cy18">cy18</OPTION>
+        <OPTION VALUE="cy19">cy19</OPTION></SELECT></td>
+      <td style = 'text-align:right;padding-left:1cm'>View :</td>
+      <td><SELECT style =  "color:#000000;width:70px" id = "viewpnl" name="viewpnl">
+        <OPTION selected="selected" VALUE="Payout">Payout</OPTION>
+        <OPTION VALUE="Bushels">Bushels</OPTION></SELECT></td>
+      <td style = 'text-align:right;padding-left:1cm'>Show : </td>
+      <td><SELECT style =  "color:#000000;width:120px" id = "ready" name="ready" onchange="calcTest();">
+        <OPTION selected="selected" VALUE="Live">Live</OPTION>
+        <OPTION VALUE="LiveTest">+Test</OPTION>
+        <OPTION VALUE="TestOnly">Test Only</OPTION>
+        <OPTION VALUE="Acres">Acres</OPTION>
+        <OPTION VALUE="Insurance">Insurance</OPTION>    
+        <OPTION VALUE="AcresInsur">Acres+Insur</OPTION>    
+        <OPTION VALUE="CashTrades">Cash Trades</OPTION>    
+        <OPTION VALUE="Futures">Futures</OPTION>    
+        <OPTION VALUE="Options">Options</OPTION>    
+        <OPTION VALUE="FutsOpts">Futs+Opts</OPTION>
+        <OPTION VALUE="OTC">OTC</OPTION></SELECT></td>
+   </tr>
+</table>
+<br><br>
+<table>
+  <tr>
+    <td style = 'text-align:right;padding-left:0.2cm' >Created at :</td><td style ='text-align:left;'><span style ='visibility:visible' id='created_at'></span></td>
+  </tr>
+  <tr>
+    <td></td><td></td>
+  </tr>
+  <tr>
+    <td style = 'text-align:right;padding-left:0.2cm' >Created by :</td><td style ='text-align:left;'><span style ='visibility:visible' id='created_by'></span></td>
+  </tr>
+</table>
+</div>
+</body>
